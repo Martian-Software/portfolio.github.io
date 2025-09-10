@@ -42,12 +42,37 @@ background-size: cover;
 .grid-item.none{
   background: rgba(0,0,0,0);
   box-shadow:none;
+  
 }
-a{
+.contact-item{
+  display:inline-block;
+  border-radius:10px;
+  width:190px;
+  padding:3px;
+  border:2px solid rgba(255,255,255,0.35);
+  
+}
+.contact-item:hover{
+  background-color: rgba(255,255,255,0.35);
+  transition: 0.3s;
+}
+
+#gh{
   color:#FFF;
-  background-color:rgba(255,255,255,0.5);
-  padding:5px;
+  
 }
-a:hover{
-  background-color:rgba(255,255,255,0.7);
+@keyframes fadeInUp {
+  from {
+    opacity: 0.8;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(15px);
+  }
+}
+
+.grid-item:hover {
+  
+  animation: fadeInUp 0.4s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
