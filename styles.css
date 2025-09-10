@@ -1,0 +1,45 @@
+body{
+background-size: 100% 100%;
+min-height:100vh;
+width:100vw;
+background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  font-family:arial;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  row-gap:10px;
+  padding: 40px;
+}
+
+.grid-item {
+  background: rgba(50,50,50,0.35);
+ 
+  padding: 10px 10px;
+  
+  color: #fff;
+  
+}
+
+.grid-item h1{
+  font-size:1rem;
+  background-color: rgba(255,255,255,0.35);
+  padding:4px;
+}
+.grid-item h2{
+  font-size:0.85rem;
+}
+.grid-item p{
+  font-size:0.7rem;
+}
+.grid-item.span-two {
+  grid-column: span 2;
+}
+.grid-item.none{
+  background: rgba(0,0,0,0);
+  box-shadow:none;
+  
